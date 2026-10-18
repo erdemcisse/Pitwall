@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+.packages/
+.tools/
+.tmp/
+.vs/
+TestResults/
+artifacts/phase0a/sandboxes/
+artifacts/phase0a/app-publish/
+
+# local verification output and tooling
+artifacts/
+.claude/
+AGENTS.md

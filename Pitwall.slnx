@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations><Platform Name="x64" /></Configurations>
+  <Folder Name="/src/">
+    <Project Path="src/Pitwall.Domain/Pitwall.Domain.csproj" />
+    <Project Path="src/Pitwall.Storage/Pitwall.Storage.csproj" />
+    <Project Path="src/Pitwall.Resources/Pitwall.Resources.csproj" />
+    <Project Path="src/Pitwall.Infrastructure.Windows/Pitwall.Infrastructure.Windows.csproj" />
+    <Project Path="src/Pitwall.Scanning/Pitwall.Scanning.csproj" />
+    <Project Path="src/Pitwall.App/Pitwall.App.csproj" />
+  </Folder>
+  <Folder Name="/tests/"><Project Path="tests/Pitwall.Tests/Pitwall.Tests.csproj" /></Folder>
+  <Folder Name="/tools/"><Project Path="tools/Pitwall.ResourceLint/Pitwall.ResourceLint.csproj" /><Project Path="tools/Pitwall.CovenantHarness/Pitwall.CovenantHarness.csproj" /><Project Path="tools/Pitwall.InventoryHarness/Pitwall.InventoryHarness.csproj" /></Folder>
+</Solution>

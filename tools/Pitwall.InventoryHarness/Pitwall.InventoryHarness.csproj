@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Pitwall.InventoryHarness</RootNamespace>
+    <AssemblyName>Pitwall.InventoryHarness</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Pitwall.Domain/Pitwall.Domain.csproj" />
+    <ProjectReference Include="../../src/Pitwall.Infrastructure.Windows/Pitwall.Infrastructure.Windows.csproj" />
+    <ProjectReference Include="../../src/Pitwall.Scanning/Pitwall.Scanning.csproj" />
+  </ItemGroup>
+</Project>

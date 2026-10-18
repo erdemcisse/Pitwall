@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Pitwall.CovenantHarness</RootNamespace>
+    <AssemblyName>Pitwall.CovenantHarness</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="covenant-manifest.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

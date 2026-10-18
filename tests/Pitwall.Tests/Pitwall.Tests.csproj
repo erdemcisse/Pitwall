@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><IsPackable>false</IsPackable><IsTestProject>true</IsTestProject></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Pitwall.Domain/Pitwall.Domain.csproj" />
+    <ProjectReference Include="../../src/Pitwall.Infrastructure.Windows/Pitwall.Infrastructure.Windows.csproj" />
+    <ProjectReference Include="../../src/Pitwall.Scanning/Pitwall.Scanning.csproj" />
+    <ProjectReference Include="../../src/Pitwall.Storage/Pitwall.Storage.csproj" />
+    <ProjectReference Include="../../src/Pitwall.Resources/Pitwall.Resources.csproj" />
+    <ProjectReference Include="../../tools/Pitwall.ResourceLint/Pitwall.ResourceLint.csproj" />
+    <ProjectReference Include="../../tools/Pitwall.CovenantHarness/Pitwall.CovenantHarness.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="all" />
+    <Using Include="Xunit" />
+  </ItemGroup>
+</Project>

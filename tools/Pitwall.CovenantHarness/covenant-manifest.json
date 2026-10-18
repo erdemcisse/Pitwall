@@ -1,0 +1,100 @@
+{
+  "manifestVersion": 2,
+  "sourceDocument": "docs/06-ARCHITECTURE-DELTA.md",
+  "sourceSection": "ADR-007 §2 and §2.1",
+  "note": "Tracks all ADR-007 rows. Published commitments are Class 1 and may not be adjusted. The chart-capture numbers are retained only as internal engineering targets after the former public commitment was Superseded/Retired; they are not customer copy or evidence that the old gate passed.",
+  "commitments": [
+    {
+      "id": "background-processes",
+      "name": "Background processes at rest",
+      "thresholdDisplay": "0",
+      "thresholds": [
+        { "value": 0, "unit": "count", "direction": "equal", "qualifier": "at rest" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "windows-services",
+      "name": "Windows services installed",
+      "thresholdDisplay": "0",
+      "thresholds": [
+        { "value": 0, "unit": "count", "direction": "equal", "qualifier": "installed" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "autostart-entries",
+      "name": "Auto-start entries created",
+      "thresholdDisplay": "0 by default; opt-in only, visible in our own startup inventory",
+      "thresholds": [
+        { "value": 0, "unit": "count", "direction": "equal", "qualifier": "by default" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "idle-working-set",
+      "name": "Idle private working set, window open",
+      "thresholdDisplay": "≤ 250 MB",
+      "thresholds": [
+        { "value": 250, "unit": "MB", "direction": "lessOrEqual", "qualifier": "window open" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "idle-cpu",
+      "name": "Idle CPU, 5-minute average",
+      "thresholdDisplay": "≤ 0.5 %",
+      "thresholds": [
+        { "value": 0.5, "unit": "percent", "direction": "lessOrEqual", "qualifier": "5-minute average" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "sensor-cpu",
+      "name": "Sensor collection at 1 Hz",
+      "thresholdDisplay": "≤ 1 % total CPU",
+      "thresholds": [
+        { "value": 1, "unit": "percent", "direction": "lessOrEqual", "qualifier": "total CPU at 1 Hz" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "launch-time",
+      "name": "Cold launch to interactive",
+      "thresholdDisplay": "≤ 6 s (warm ≤ 3 s)",
+      "thresholds": [
+        { "value": 6, "unit": "seconds", "direction": "lessOrEqual", "qualifier": "cold" },
+        { "value": 3, "unit": "seconds", "direction": "lessOrEqual", "qualifier": "warm" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "chart-capture",
+      "name": "Live frame-time chart during capture — internal engineering target",
+      "thresholdDisplay": "Internal target only: 60 fps sustained; capture overhead < 2 %; not a public commitment",
+      "thresholds": [
+        { "value": 60, "unit": "fps", "direction": "greaterOrEqual", "qualifier": "sustained" },
+        { "value": 2, "unit": "percent", "direction": "lessThan", "qualifier": "capture overhead" }
+      ],
+      "adrSection": "ADR-007 §2.1"
+    },
+    {
+      "id": "uninstall-residue",
+      "name": "Residue after uninstall",
+      "thresholdDisplay": "Nothing self-reinstalling. No UEFI-seeded installer. No orphan service.",
+      "thresholds": [
+        { "value": 0, "unit": "residue-items", "direction": "equal", "qualifier": "self-reinstalling or UEFI-seeded installer or orphan service" }
+      ],
+      "adrSection": "ADR-007 §2"
+    },
+    {
+      "id": "telemetry",
+      "name": "Telemetry",
+      "thresholdDisplay": "Off, with no remote switch to enable it",
+      "thresholds": [
+        { "value": "off", "unit": "state", "direction": "equal", "qualifier": "no remote switch to enable it" }
+      ],
+      "adrSection": "ADR-007 §2"
+    }
+  ]
+}

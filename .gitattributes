@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Preserve measured bytes so completion-manifest hashes survive checkout.
+artifacts/phase0b/** -text
+artifacts/phase0b-continuation/** -text
+artifacts/phase0b-closure-prep/** -text
+artifacts/phase0b-closure-corrections/** -text
+artifacts/phase0b-capture-execution/** -text
+artifacts/todesk-removal/** -text

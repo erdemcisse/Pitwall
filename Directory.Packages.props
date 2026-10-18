@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup><ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally></PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Data.Sqlite" Version="10.0.11" />
+    <PackageVersion Include="System.Management" Version="10.0.11" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="5.9.0" />
+    <PackageVersion Include="Microsoft.WindowsAppSDK.WinUI" Version="2.3.6" />
+    <PackageVersion Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.9169" />
+    <!--
+      Phase 0B spike only. Referenced solely by spikes/Pitwall.ChartSpike, which no product project
+      references. Its redistribution terms are NOT cleared: the package declares no SPDX licence
+      expression, requires licence acceptance, and its declared licence URL no longer resolves.
+      See the Class 1 escalation in PHASE-0B-REPORT.md before shipping anything that depends on it.
+    -->
+    <PackageVersion Include="Microsoft.Graphics.Win2D" Version="1.4.0" />
+  </ItemGroup>
+</Project>
